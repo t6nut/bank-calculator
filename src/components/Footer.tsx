@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function Footer() {
 	const supportLogo = require('../assets/support.svg').default
@@ -23,7 +23,7 @@ function Footer() {
 			<div className="footer__support">
 				<img 
 					src={supportLogo}
-					alt="" />
+					alt="support logo" />
 				<div className="footer__support-text">
 					<h3>LHV <strong>Klienditugi</strong></h3>
 					{!isMobileView && (
@@ -38,13 +38,13 @@ function Footer() {
 				<div className="footer__contact-phone">
 					<img
 						src={phoneIcon}
-						alt="" />
+						alt="phone icon" />
 					<p>6 800 400</p>
 				</div>
 				<div className="footer__contact-email">
 					<img
 						src={emailIcon}
-						alt="" />
+						alt="email icon" />
 					<a className="link" href="mailto:info@lhv.ee" target="_blank" rel=
 					"noreferrer">info@lhv.ee</a>
 				</div>
