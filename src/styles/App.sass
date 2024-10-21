@@ -34,7 +34,7 @@ $light-brown: #F1EDEB
 		display: flex
 		align-items: center
 		font-weight: 500
-		transition: .2s linear
+		transition: .2s ease-in-out
 		&:hover
 			color: $dark
 			.btn--icon *
@@ -45,6 +45,7 @@ $light-brown: #F1EDEB
 			left: -24px
 			
 	&--dark
+		font-size: 14px
 		position: relative
 		padding: 14px 16px
 		border-radius: 4px
@@ -52,6 +53,8 @@ $light-brown: #F1EDEB
 		background: #3B3B47
 		transition: background 0.5s ease
 		p
+			font-weight: 400
+			letter-spacing: 0.5px
 			position: relative
 			z-index: 1
 		&::after
@@ -62,9 +65,9 @@ $light-brown: #F1EDEB
 			left: 0
 			right: 0
 			bottom: 0
-			background: linear-gradient(90deg, rgb(59, 59, 71) 0%, rgb(74, 179, 186) 100%)
+			background: linear-gradient(90deg, #1B5269 0%, rgb(74, 179, 186) 100%)
 			opacity: 0
-			transition: opacity 0.5s ease
+			transition: opacity 0.3s ease-in-out
 			z-index: 0
 		&:hover
 			&::after
